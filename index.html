@@ -4,7 +4,7 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Project</title>
+     <title>Our Pricing</title>
 
      <!-- Stylesheets   -->
      <link rel="stylesheet" href="css/normalize.css ">
@@ -12,5 +12,54 @@
 </head>
 <body>
      <script src="/js/main.js"></script>
+
+          <!-- Main  -->
+     <div class="container main-content">
+
+          <!-- Background Images  -->
+          <div class="bg-images">
+               <img class="bg-left-image" src="./img/bg-left-image.png" width="472" height="760" alt="background left bottom image">
+               <img class="bg-right-image" src="./img/bg-right-image.png" width="472" height="760" alt="background top image">
+          </div>
+
+          <h2 class="heading">Our Pricing</h2>
+          <form class="form" action="GET" class="form">
+               <div class="checkbox-wrapper">
+                    <label class="checkbox-annually" for="checkbox-annually">Annually</label>
+                    <input class="input-checkbox"  type="checkbox" checked>
+                    <span class="checkbox-monthly" for="checkbox-monthly">Monthly</span>
+               </div>
+          </form>
+
+          <!-- Pricing Section  -->
+          <div class="pricing-section">
+               <ul class="pricing-card">
+                    <li class="pricing-card-list">
+                         <h2 class="card-header">Basic</h2>
+                         <h3 class="card-price"><span class="card-price-number">$</span>19.99</h3>
+                         <div class="card-text">500 GB Storage</div>
+                         <div class="card-text">2 Users Allowed</div>
+                         <div class="card-text">Send up to 3 GB</div>
+                         <a class="card-button" href="#">Learn more</a>
+                    </li>
+                    <li class="pricing-card-list card-center">
+                         <h2 class="card-header">Professional</h2>
+                         <h3 class="card-price"><span class="card-price-number">$</span>24.99</h3>
+                         <div class="card-text">1 TB Storage</div>
+                         <div class="card-text">5 Users Allowed</div>
+                         <div class="card-text">Send up to 10 GB</div>
+                         <a class="card-button card-button-center" href="#">Learn more</a>
+                    </li>
+                    <li class="pricing-card-list">
+                         <h2 class="card-header">Master</h2>
+                         <h3 class="card-price"><span class="card-price-number">$</span>39.99</h3>
+                         <div class="card-text">2 TB Storage</div>
+                         <div class="card-text">10 Users Allowed</div>
+                         <div class="card-text">Send up to 20 GB</div>
+                         <a class="card-button" href="#">Learn more</a>
+                    </li>
+               </ul>
+          </div>
+     </div>
 </body>
 </html>

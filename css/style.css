@@ -1,3 +1,23 @@
+/* font face  */
+@font-face {
+     font-family: 'Montserrat';
+     src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+          url('../fonts/Montserrat-Bold.woff') format('woff');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+
+/* Custom Prop */
+:root{
+     --bg-color: #F2F2F2;
+     --text-color: #6E728E;
+     --price-color: #4A4D60;
+     --white-color: #FFFFFF;
+     --card-color: #6D72DE;
+     --font-family: 'Montserrat', "Arial", sans-serif;
+}
+
 /* Global  */
 
 html{
@@ -17,13 +37,13 @@ body{
      padding: 0;
      margin: 0;
      display: flex;
-     font-size: 16px;
-     line-height: 1.5 ;
-     font-family: "Arial", sans-serif;
+     font-size: 15px;
+     line-height: 28px;
+     font-family: var(--font-family);
      flex-direction: column;
      height: 100%;
-     background-color: #fff;
-     color: #222;
+     background-color: var(--bg-color);
+     color: var(--text-color);
 }
 
 img{
@@ -34,14 +54,113 @@ img{
 /* CONTAINER  */
 .container{
      width: 100%;
-     max-width: 1200px;
+     max-width: 1440px;
      margin-left: auto;
      margin-right: auto;
-     padding-left: 50px;
-     padding-right: 50px;
+     padding-left: 195px;
+     padding-right: 195px;
 }
 
 /* Main content  */
 .main-content{
      flex-grow: 1;
+}
+
+.heading, .form {
+     margin: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.heading{
+     margin-top: 71px;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 32px;
+     line-height: 39px;
+     text-align: center;
+
+}
+.form {
+     margin-top: 40px;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 15px;
+     line-height: 28px;
+     mix-blend-mode: normal;
+     opacity: 0.5;
+}
+.checkbox-wrapper {
+}
+.checkbox-annually {
+}
+.input-checkbox {
+}
+.checkbox-monthly {
+}
+.pricing-section {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.pricing-card {
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+}
+
+.pricing-card-list {
+     width: 350px;
+     height: 453px;
+     background-color: var(--white-color);
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+     /* justify-content: center; */
+     align-items: center;
+     border-radius: 3px;
+}
+.card-center{
+     background-color: var(--card-color);
+     color: var(--white-color);
+}
+.card-header {
+     font-style: normal;
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 28px;
+     text-align: center;
+     font-family: var(--font-family);
+}
+.card-price {
+}
+.card-price-number {
+}
+.card-text {
+}
+.card-button {
+}
+
+.card-button-center {
+}
+
+.bg-images {
+     position: relative;
+}
+.bg-left-image {
+     position: absolute;
+     width: 372px;
+     height: 360px;
+     left: -20%;
+     top: 500px;
+}
+.bg-right-image {
+     position: absolute;
+     width: 472px;
+     height: 760px;
+     left: 800px;
+
 }
