@@ -15,6 +15,7 @@
      --price-color: #4A4D60;
      --white-color: #FFFFFF;
      --card-color: #6D72DE;
+     --border-color: #6e728e48;
      --font-family: 'Montserrat', "Arial", sans-serif;
 }
 
@@ -119,15 +120,17 @@ img{
      list-style: none;
      display: flex;
      flex-direction: column;
-     /* justify-content: center; */
      align-items: center;
      border-radius: 3px;
+     z-index: 1;
 }
 .card-center{
      background-color: var(--card-color);
      color: var(--white-color);
 }
 .card-header {
+     margin: 0;
+     margin-top: 31px;
      font-style: normal;
      font-weight: bold;
      font-size: 18px;
@@ -136,15 +139,65 @@ img{
      font-family: var(--font-family);
 }
 .card-price {
+     margin: 0;
+     padding: 0;
+     margin-top: 24px;
+     width: 288px;
+     text-align: center;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 72px;
+     line-height: 71px;
+     letter-spacing: -2.16px;
+     padding-bottom: 32px;
+     border-bottom: 1px solid var(--border-color);
+
+
 }
 .card-price-number {
+     font-style: normal;
+     font-weight: bold;
+     font-size: 40px;
+     line-height: 49px;
+     letter-spacing: -1.2px;
+     margin-right: 8px;
 }
 .card-text {
+     margin: 0;
+     padding: 0;
+     width: 288px;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 15px;
+     line-height: 28px;
+     text-align: center;
+     margin-top: 12px;
+     padding-bottom: 12px;
+     border-bottom: 1px solid var(--border-color);
 }
 .card-button {
+     margin-top: 32px;
+     width: 288px;
+     text-align: center;
+     text-decoration: none;
+     background-color: var(--card-color);
+     color: var(--white-color);
+     padding: 12px;
+     font-family: var(--font-family);
+     text-transform: uppercase;
+     border-radius: 3px;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 13px;
+     line-height: 16px;
+     text-align: center;
+     letter-spacing: 1.3px;
+
 }
 
 .card-button-center {
+     background-color: var(--white-color);
+     color: var(--card-color);
 }
 
 .bg-images {
