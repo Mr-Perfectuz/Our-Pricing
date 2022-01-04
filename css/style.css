@@ -170,6 +170,8 @@ input:checked + .slider:before {
      line-height: 28px;
      text-align: right;
      opacity: 0.5;
+     text-decoration: none;
+     color: var(--text-color);
 
 }
 .input-checkbox {
